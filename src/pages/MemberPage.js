@@ -1,9 +1,9 @@
-import MemberList from "../components/MemberList";
+import MemberContainer from "../containers/MemberContainer";
 
 const MemberPage = () => {
     return (
         <div>
-            <MemberList/>
+            <MemberContainer/>
         </div>
     );
 };
