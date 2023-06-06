@@ -1,4 +1,4 @@
-const SignUpForm = ({email, password, nickname,onChange, onSubmit}) => {
+const SignUpForm = ({email, password, nickname,onChange, onRegister}) => {
     return (
         <div>
             <form>
@@ -21,7 +21,7 @@ const SignUpForm = ({email, password, nickname,onChange, onSubmit}) => {
                     onChange={onChange}
                     value={nickname}
                 />
-                <button onClick={onSubmit}>회원가입</button>
+                <button onClick={onRegister}>회원가입</button>
             </form>
         </div>
     );

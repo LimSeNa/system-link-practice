@@ -1,4 +1,7 @@
-const Member = ({ email, password, nickname }) => {
+import {useSelector} from "react-redux";
+
+const Member = () => {
+    const {email, password, nickname} = useSelector(state => state.signup);
     return (
         <div>
             <div>{email}, {password}, {nickname}</div>
@@ -13,8 +16,6 @@ const MemberList = () => {
         <div>
             <div>회원 목록</div>
             <div>
-                <Member/>
-                <Member/>
                 <Member/>
             </div>
         </div>
